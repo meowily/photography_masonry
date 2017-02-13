@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whistler Photo Gallery</title>
+
+	<script src="js/masonry.pkgd.min.js"></script>
+
+
+	 <meta name="description" content="">
+     <meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+	<link rel="stylesheet" href="normalize.css">
+
+	<link rel="stylesheet" href="global.css">
+
+</head>
+<body>
+
+
+<div class="banner">
+    <h1 class="banner-head">
+     Whistler
+    </h1>
+</div>
+
+<div class="pure-menu pure-menu-horizontal pure-menu-custom">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected"><a href="index.html" class="pure-menu-link">Whistler</a></li>
+         <li class="pure-menu-item pure-menu-selected"><a href="tofino.html" class="pure-menu-link">Tofino</a></li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
+            <ul class="pure-menu-children">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tumblr Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<div class="container">
+	<div id="content">
+		
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/1.jpg"> <img src="img/1.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/10.jpg"> <img src="img/10.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/4.jpg"> <img src="img/4.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/5.jpg"> <img src="img/5.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/6.jpg"> <img src="img/6.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/7.jpg"> <img src="img/7.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/8.jpg"> <img src="img/8.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/9.jpg"> <img src="img/9.jpg"></a>
+		</div>
+
+		<div class="whistler">
+			<a class="fancybox" rel="group" href="img/3.jpg"> <img src="img/3.jpg"></a>
+		</div>
+
+	</div>
+
+</div>
+
+<footer>
+	<p> Emily Hicks <br> 
+	BCIT New Media and Web Development 2016</p>
+</footer>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+
+<script>
+
+var posts = document.querySelectorAll('.container');
+imagesLoaded( posts, function( instance) {
+	console.log('all images are loaded');
+});
+</script>
+
+  <script>
+  var container = document.querySelector('.container');
+  var msnry = new Masonry( container, {
+
+    columnWidth: 320,
+    itemSelector: '.whistler', 
+    // gutter: 15,
+    transitionDuration: 0
+  });
+
+</script>
+
+
+</body>
+</html>

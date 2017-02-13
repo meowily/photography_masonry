@@ -1,0 +1,87 @@
+
+body {
+	color: #ddd;
+	background-color: #fff ;
+}
+
+p {
+	text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 15px 0 10px 0px;
+}
+
+.pure-menu-custom {
+    margin-bottom: 25px;
+    background-color: #ccc;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+}
+
+li {
+    font-size: 25px;
+}
+
+.banner {
+    background: transparent url("img/title.jpg") 0 0  no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    /*margin-bottom: 0;*/
+    display: table;
+
+}
+
+.banner-head {
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0;
+
+    }
+
+.banner h1 {
+        font-family: 'Poiret One', cursive;
+        font-weight: 900;
+        line-height: 1.2em;
+        font-size: 7em;
+        color: #fff;
+        text-shadow: 0 2px 2px #000;
+}
+
+.l-box{
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content {
+    width: auto;
+    margin: 0 auto;
+}
+
+.whistler {
+    display: block;
+    float: left;
+    width: 300px;
+    margin: 0 20px 20px 0;
+    transition: left .3s ease-in-out, top .3s ease-in-out .3s;
+    -webkit-transition: left .3s ease-in-out, top .3s ease-in-out .3s;
+}
+
+.whistler img {
+    width: 300px;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+   /* height: auto;*/
+    background-color: #ccc;
+    bottom: 0;
+}
+
